@@ -9,8 +9,49 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-         h2 {
-            font-family: 'Britannic', sans-serif; /* Замените 'Arial' на нужный вам шрифт */
+        }
+
+        h2 {
+            font-family: 'Britannic', sans-serif;
+        }
+
+         .image-container {
+            position: fixed; /* Фиксированное позиционирование */
+            bottom: 0; /* Расположение внизу страницы */
+            left: 50%; /* Центрирование по горизонтали */
+            transform: translateX(-50%); /* Сдвиг влево на 50% ширины элемента */
+            margin-bottom: 10px; /* Отступ от нижнего края страницы */
+            display: flex; /* Используем flexbox для расположения элементов в строку */
+            align-items: center; /* Центрируем элементы по вертикали */
+        }
+
+        .image-container img {
+            width: 40px; /* Задайте желаемую ширину изображения */
+            height: auto; /* Сохраняет пропорции изображения */
+        }
+
+        .link {
+            margin-left: 10px; /* Отступ слева для ссылки */
+            font-family: 'Britannic', sans-serif;
+            font-size: 18px; /* Размер шрифта для ссылки */
+            text-decoration: none; /* Убирает подчеркивание у ссылки */
+            color: #333; /* Цвет текста ссылки */
+        }
+
+        .link:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+        .gif-container {
+            position: fixed; /* Фиксированное позиционирование */
+            top: 50%; /* Центрирование по вертикали */
+            left: 50%; /* Центрирование по горизонтали */
+            transform: translate(-50%, -50%); /* Сдвиг для точного центрирования */
+            z-index: 1; /* Убедитесь, что гифка будет выше других элементов */
+        }
+
+        .gif-container img {
+            max-width: 100%; /* Устанавливает максимальную ширину изображения */
+            height: auto; /* Сохраняет пропорции изображения */
         }
     </style>
     <title>OBLIVIONSITE</title>
@@ -18,6 +59,13 @@
 <body>
     <div class="centered-top">
         <h2>THE OBLIVION4US WEBSITE</h2>
+    </div>
+    <div class="image-container">
+        <img src="github-mark.png" alt="Description of the image">
+        <a href="https://github.com/oblivion4us" class="link">github</a>
+    </div>
+    <div class="gif-container">
+        <img src="welcome-gif.gif" alt="Centered GIF">
     </div>
 </body>
 </html>
